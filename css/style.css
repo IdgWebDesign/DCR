@@ -491,6 +491,12 @@ p,h1,h2,h3,a{
     font-size: 0.6em;
   }
 
+  .infoContacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
 /*||||||||||||||||||||| MEDIA-QUERYS |||||||||||||||||||||*/
 
 @media (max-width: 1400px) {

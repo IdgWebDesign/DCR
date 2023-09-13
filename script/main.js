@@ -78,6 +78,34 @@
   
   });
 
+  document.querySelector('.crossQuinc').addEventListener('click', function(e){
+
+
+    document.getElementById('GALQUINC').style.display= 'none';
+  
+  
+  
+  });
+
+  document.querySelector('.crossPrim').addEventListener('click', function(e){
+
+
+    document.getElementById('GALPRIM').style.display= 'none';
+  
+  
+  
+  });
+
+  document.querySelector('.crossSec').addEventListener('click', function(e){
+
+
+    document.getElementById('GALSEC').style.display= 'none';
+  
+  
+  
+  });
+
+
   var swiper = new Swiper(".mySwiper", {
     loop: true,
     spaceBetween: 50,
@@ -101,7 +129,7 @@
   var swiperPrim = new Swiper(".SwiperPrim", {
     loop: true,
     spaceBetween: 50,
-    slidesPerView: 4,
+    slidesPerView: 2,
     freeMode: true,
     watchSlidesProgress: true,
   });
@@ -112,7 +140,27 @@
     spaceBetween: 10,
     
     thumbs: {
-      swiper: swiper,
+      swiper: swiperPrim,
+    },
+    autoplay: true,
+    repeat: true,
+  });
+
+  var swiperQuinc = new Swiper(".SwiperQuinc", {
+    loop: true,
+    spaceBetween: 50,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+
+  
+  var swiperQuinc = new Swiper(".SwiperQuinc2", {
+    loop: true,
+    spaceBetween: 10,
+    
+    thumbs: {
+      swiper: swiperQuinc,
     },
     autoplay: true,
     repeat: true,
