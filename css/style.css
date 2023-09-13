@@ -1,0 +1,540 @@
+/*||||||||||||||||||||| FONTS |||||||||||||||||||||*/ 
+
+@font-face {
+    font-family: "SourceBold";
+    src: url(../fonts/SourceSansPro-Bold.otf);
+}
+
+@font-face {
+    font-family: "SourceSemiBold";
+    src: url(../fonts/SourceSansPro-Semibold.otf);
+}
+@font-face {
+    font-family: "SourceBlack";
+    src: url(../fonts/SourceSansPro-Black.otf);
+}
+@font-face {
+    font-family: "SourceRegular";
+    src: url(../fonts/SourceSansPro-Regular.otf);
+}
+
+/*||||||||||||||||||||| GRAL |||||||||||||||||||||*/ 
+
+html {
+    scroll-behavior: smooth;
+  }
+
+html, body {
+    
+   
+    --nav-height: 5em;
+}
+
+a{
+    text-decoration:none;
+    color: white;
+
+}
+
+body {
+    
+    font-family: "lora-regular", serif;
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.765;
+    color: #757575;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*||||||||||||||||||||| NAV |||||||||||||||||||||*/ 
+
+.fijo{
+    position:static;
+}
+
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--nav-height);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 16%, rgba(1, 0, 88, 0.479) 85%);
+    backdrop-filter: blur(1px);
+    z-index: 999;
+    transition: 0.5s;
+}
+
+p,h1,h2,h3,a{
+    margin: 0;
+}
+
+.contNAV{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logoNAV img{
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+}
+
+.itemsNAV{
+    width: 75%;
+}
+
+.itemsNAV ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    font-size: 0.55em;
+    justify-content: space-evenly;
+    color: white;
+    font-family: "SourceBold";
+    letter-spacing: 0.3ch;
+}
+.itemsNAV ul li a{
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+}
+
+
+.nav--hidden {
+    transform: translateY(calc(-1 * var(--nav-height)));
+    box-shadow: none;
+  }
+
+.nav__link {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 1em;
+    font-weight: bold;
+  }
+/*||||||||||||||||||||| HEADER |||||||||||||||||||||*/ 
+
+.s-header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/headDCR.png);
+   
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.headerTXT{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, 0%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.headerTXT h3{
+    color: white;
+    text-align: center;
+    line-height: 70%;
+    font-size: 3.5em;
+    font-family: "SourceSemiBold";
+    letter-spacing: -0.1ch;
+    margin-bottom: 3%;
+}
+
+.button-28 {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+ transition: 0.5s;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "SourceBold";
+  font-size: 1.1em;
+  font-weight: 600;
+  line-height: 90%;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 9em;
+  will-change: transform;
+}
+
+.button-28:disabled {
+  pointer-events: none;
+}
+
+.button-28:hover {
+  color: #000000;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.SocialSIDE{
+    display: flex;
+    justify-content: space-evenly;
+   width: 15%;
+}   
+
+
+.SocialSIDE a img{
+    height: 1.3em;
+    object-fit: contain;
+    transition: 0.5s;
+}
+
+.SocialSIDE a img:hover{
+    scale: 1.1;
+}
+
+
+/*||||||||||||||||||||| VIAJES |||||||||||||||||||||*/ 
+
+.s-viajes{
+    width: 100%;
+    padding: 5% 0%;
+    background-image: url(../img/bgVIAJES.png);
+    background-position: center 70%;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.titleViajes{
+    color: white;
+    font-family: "SourceBold";
+    margin-bottom:1.5%;
+    font-size:1.5em;
+    letter-spacing: -0.04em;
+}
+
+.contViajes{
+    position: relative;
+    width: 80%;
+    margin: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.quadViajes{
+    
+    width: 30em;
+    
+}
+
+.columnViajes{
+    display: flex;
+    width: 100%;
+    height: 15em;
+}
+
+.itemViajes{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.itemViajes img{
+    display: block;
+    transition: 0.5s;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.itemViajes:hover img{
+    transform: scale(1.1);
+  transform-origin: 50% 50%;
+  
+}
+
+.superItem{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 5%;
+}
+
+.superItem img{
+    width: 80%;
+    height: auto;
+    margin-bottom: 2%;
+}
+
+.itemViajes:hover .superItem img{
+    transform: scale(1);
+}
+
+.button-36 {
+  background-color: #f9b000;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family:"SourceBlack";
+  font-size: 0.75em;
+  font-weight: 500;
+  
+  width: 57%;
+  padding: 1rem 0rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  z-index: 50;
+  
+
+}
+
+.itemViajes:hover .button-36 {
+  box-shadow: #f9b000 0 1px 30px;
+  transition-duration: .1s;
+}
+
+
+
+
+
+@media (min-width: 768px) {
+  .button-36 {
+    padding: 1rem 2.6rem;
+  }
+}
+
+.item15{
+    
+    width: 100%;
+    margin: auto;
+    margin-top: 1%;
+    height: 3.5em;
+    
+    
+}
+
+.item15 img{
+    width: 100%;
+    height: 100%;
+   object-fit: cover;
+}
+
+/*||||||||||||||||||||| INFO |||||||||||||||||||||*/
+
+.s-info{
+    position: relative;
+    width: 100%;
+    padding: 6% 0%;
+    background-image: url(../img/BgInfo.png);
+    background-position: center center;
+}
+
+.infoHEAD{
+    width: 100%;
+    height:20em;
+}
+
+.infoHEAD img{
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+
+.titleInfo{
+    margin-bottom: 2%;
+    text-align: center;
+    font-family: "SourceBold";
+    color: #0068b3;
+    font-size: 2em;
+    letter-spacing: -0.04em;
+}
+
+.infoTXT{
+    text-align: center;
+    width: 55%;
+    margin: auto;
+    color: #878787;
+}
+
+.dataInfo{
+    font-family: "SourceSemiBold";
+    font-size: 0.65em;
+}
+
+.subtitleInfo{
+    margin-top: 2%;
+    font-family: "SourceBold";
+    font-size: 1.5em;
+    letter-spacing: -0.04em;
+}
+
+.tr1 {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    border-style: solid;
+    border-width: 200px 200px 0 0;
+    border-color: #0068b3b6 transparent transparent transparent;
+    transform: rotate(0deg);
+ }
+
+ .tr2 {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-style: solid;
+    border-width: 0 150px 150px 0;
+    border-color: transparent #0068b3b6 transparent transparent;
+    transform: rotate(0deg);
+ }
+
+
+/*||||||||||||||||||||| CONTACTO |||||||||||||||||||||*/
+
+.s-contacto{
+ padding: 5%;
+ background-image: url(../img/bgContacto.png);
+ background-position: center 0px;
+}
+.whatsapp {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+  }
+  
+  .whatsapp-icon {
+    margin-top:13px;
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 70%;
+    margin: auto;
+  }
+
+  label{
+    font-family: "SourceSemiBold";
+    font-size: 0.7em;
+  }
+
+  input{
+    height: 2.5em;
+    background-color: transparent;
+    border-width: 1px;
+    border-color: #0000004d;
+  }
+
+  textarea{
+    background-color: transparent;
+    border-color: #0000004d;
+  }
+
+  .btnForm{
+    background-color: #0068b3;
+    margin: 2% auto;
+    margin-bottom: 5%;
+    width: 10em;
+    font-size: 0.6em;
+  }
+
+/*||||||||||||||||||||| MEDIA-QUERYS |||||||||||||||||||||*/
+
+@media (max-width: 1400px) {
+    
+    .headerTXT h3{
+        margin-bottom: 5%;
+    }
+
+    .contNAV{
+        width: 70%;
+    }
+
+
+
+}
+@media (max-width: 1200px) {
+    
+    .headerTXT h3 {
+        font-size: 4em;
+    }
+
+    .contNAV{
+        width: 90%;
+    }
+
+    .button-28{
+        font-size: 1.2em;
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    .headerTXT h3 {
+        font-size: 3.5em;
+    }
+    .contNAV{
+        width: 95%;
+    }
+    .button-28{
+        font-size: 1.1em;
+    }
+}
+
+
+
+

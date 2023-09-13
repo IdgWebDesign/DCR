@@ -1,0 +1,136 @@
+body{
+    background-image: url(../img/BrPaquete_01.png);
+    
+}
+
+.crucero{
+    background-image: url(../img/CrPaqueteBG.png);
+}
+
+.cuba{
+    background-image: url(../img/CuPaqueteBG.png);
+}
+
+.vcp{
+    background-image: url(../img/VcpPaqueteBG.png);
+}
+
+.quinc{
+    background-image: url(../img/15PaqueteBG.png);
+}
+
+.fijo{
+    position:static;
+}
+
+.presentationInsidePaquete{
+    text-align: center;
+    line-height: 90%;
+    color: white;
+    margin-bottom: 3%;
+}
+
+.titleInsidePaquete{
+    font-family: "SourceBold";
+    font-size: 2em;
+    line-height: 90%;
+}
+
+.subInsidePaquete{
+    font-family: "SourceRegular";
+    line-height: 90%;
+    font-size: 1.2em;
+    letter-spacing: -0.1ch;
+}
+
+.contInsidePaquete{
+    width: 50%;
+    background-color: white;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+.imgContInsidePaquete{
+    width: 100%;
+    height: 16em;
+}
+
+.imgContInsidePaquete img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.infoContInsidePaquete{
+    background-color: white;
+    
+    padding-bottom: 2%;
+}
+
+.filaInfoInside{
+    display: flex;
+    width: 100%;
+    margin: 5% 0%;
+}
+
+.imgInfoInside{
+    width: 2.2em;
+    padding: 0% 5%;
+    height: 2.2em;
+}
+
+.imgInfoInside img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+   
+  
+}
+
+.presentationInfo{
+    width: 85%;
+    padding-right:5%;
+    line-height: 110%;
+}
+
+.presentationInfo h3{
+    font-family: "SourceBold";
+    font-size: 1.1em;
+    color: #7b7272;
+    margin-bottom: 1%;
+    letter-spacing: -0.03em;
+}
+
+.presentationInfo p{
+    font-family: "SourceRegular";
+    font-size: 0.7em;
+    color: #7b7272;
+    line-height: 130%;
+}
+
+
+.btnPaquete {
+    background-color: #f9b000;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    width: 20%;
+    font-family:"SourceBlack";
+    font-size: 0.8em;
+    
+    margin:auto;
+   margin-top: 8%;
+    padding: .5rem 0rem;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .5s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+   
+    
+  
+  }
