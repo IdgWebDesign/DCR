@@ -222,7 +222,7 @@ p,h1,h2,h3,a{
     width: 100%;
     padding: 5% 0%;
     background-image: url(../img/bgVIAJES.png);
-    background-position: center 70%;
+    background-position: center center;
     background-attachment: fixed;
     position: relative;
 }
