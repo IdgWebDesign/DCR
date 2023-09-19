@@ -445,6 +445,10 @@ p,h1,h2,h3,a{
    object-fit: cover;
 }
 
+.im15-2{
+    display: none;
+}
+
 /*||||||||||||||||||||| INFO |||||||||||||||||||||*/
 
 .s-info{
@@ -518,6 +522,11 @@ p,h1,h2,h3,a{
     border-width: 0 150px 150px 0;
     border-color: transparent #0068b3b6 transparent transparent;
     transform: rotate(0deg);
+ }
+
+ .imgfrMobile{
+    display: none;
+    width: 100%;
  }
 
 
@@ -761,6 +770,12 @@ p,h1,h2,h3,a{
 
 @media (max-width: 600px) {
 
+    .im15-1{
+        display: none !important;
+    }
+    .im15-2{
+        display: block;
+    }
     .quadViajes{
         width: 11em ;
         display: flex;
@@ -783,8 +798,9 @@ p,h1,h2,h3,a{
         height: 11em;
     }
     .s-info{
-        background-image: url(../img/BgInfoMobile.png);
-        padding: 10% 0%;
+        background-color: white;
+        background-image: none;
+       padding-bottom: 0%;
     }
     .s-viajes{
         padding: 10% 0%;
@@ -803,6 +819,16 @@ p,h1,h2,h3,a{
 
     label{
         font-size: .6em;
+    }
+
+    
+
+    .imgfrMobile{
+        display: block;
+        width: 100%;
+        
+        
+        object-fit: cover;
     }
 }
 
@@ -865,7 +891,9 @@ p,h1,h2,h3,a{
 
 @media (max-width: 400px) {
 
-    
+    .item15{
+        height: 9em;
+    }
     
     .quadViajes{
         width: 9em ;
