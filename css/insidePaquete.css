@@ -202,6 +202,10 @@ body{
     border-right: 0.125rem solid #000000;
     transform: rotate(225deg);
    }
+
+   button.learn-more:hover .circle{
+    background: #ffffffd2;
+   }
    
    
    @media (max-width: 1400px) {

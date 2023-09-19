@@ -223,8 +223,8 @@ body{
     position: relative;
     display: block;
     margin: 0;
-    width: 3rem;
-    height: 3rem;
+    width: 2.3rem;
+    height: 2.3rem;
     background: #ffffff;
     border-radius: 1.625rem;
    }
@@ -240,7 +240,7 @@ body{
    
    button.learn-more .circle .icon.arrow {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    left: 0.825rem;
+    left: 0.6rem;
     width: 1.125rem;
     height: 0.125rem;
     background: none;
@@ -257,7 +257,10 @@ body{
     border-right: 0.125rem solid #000000;
     transform: rotate(225deg);
    }
-   
+
+   button.learn-more:hover .circle{
+    background: #ffffffd2;
+   }
    
    .cross{
     top: 2%;

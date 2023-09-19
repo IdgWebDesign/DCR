@@ -302,6 +302,12 @@ p,h1,h2,h3,a{
     scale: 1.1;
 }
 
+.sinceCont{
+
+    margin-bottom: 0.5%;
+    width: 9em;
+    object-fit: contain;
+}
 
 /*||||||||||||||||||||| VIAJES |||||||||||||||||||||*/ 
 
@@ -445,7 +451,7 @@ p,h1,h2,h3,a{
    object-fit: cover;
 }
 
-.im15-2{
+.item15 .im15-2{
     display: none;
 }
 
@@ -491,6 +497,8 @@ p,h1,h2,h3,a{
     font-family: "SourceSemiBold";
     font-size: 0.65em;
 }
+
+
 
 .subtitleInfo{
     margin-top: 2%;
@@ -696,6 +704,9 @@ p,h1,h2,h3,a{
         height: 3.2em;
     }
 
+    .sinceCont{
+        width: 7em;
+    }
 }
 
 @media (max-width: 800px) {
@@ -770,10 +781,11 @@ p,h1,h2,h3,a{
 
 @media (max-width: 600px) {
 
-    .im15-1{
-        display: none !important;
+    .item15 .im15-1{
+        display: none;
     }
-    .im15-2{
+    
+    .item15 .im15-2{
         display: block;
     }
     .quadViajes{
@@ -830,6 +842,7 @@ p,h1,h2,h3,a{
         
         object-fit: cover;
     }
+
 }
 
 @media (max-width: 550px) {
@@ -886,6 +899,10 @@ p,h1,h2,h3,a{
     .whatsapp{
         
     right: 20px;    
+    }
+
+    .sinceCont{
+        width:6em;
     }
 }
 
