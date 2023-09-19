@@ -5,6 +5,7 @@ body{
 
 .crucero{
     background-image: url(../img/CrPaqueteBG.png);
+    background-position: 40% 0%;
 }
 
 .cuba{
@@ -13,10 +14,12 @@ body{
 
 .vcp{
     background-image: url(../img/VcpPaqueteBG.png);
+    background-position: 60% 0%;
 }
 
 .quinc{
     background-image: url(../img/15PaqueteBG.png);
+    background-position: 100% 0%;
 }
 
 .fijo{
@@ -38,6 +41,7 @@ body{
     font-family: "SourceBold";
     font-size: 2em;
     line-height: 90%;
+    letter-spacing: -0.04em;
 }
 
 .subInsidePaquete{
@@ -100,6 +104,7 @@ body{
 .presentationInfo h3{
     font-family: "SourceBold";
     font-size: 1.1em;
+    line-height: 100%;
     color: #7b7272;
     margin-bottom: 1%;
     letter-spacing: -0.03em;
@@ -163,8 +168,8 @@ body{
     position: relative;
     display: block;
     margin: 0;
-    width: 3rem;
-    height: 3rem;
+    width: 2.3rem;
+    height: 2.3rem;
     background: #ffffff;
     border-radius: 1.625rem;
    }
@@ -180,7 +185,7 @@ body{
    
    button.learn-more .circle .icon.arrow {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    left: 0.825rem;
+    left: 0.6rem;
     width: 1.125rem;
     height: 0.125rem;
     background: none;
@@ -199,4 +204,149 @@ body{
    }
    
    
-   
+   @media (max-width: 1400px) {
+    .contInsidePaquete{
+        width: 65%;
+    }
+    
+   }
+
+
+   @media (max-width: 1100px) {
+    .contInsidePaquete{
+        width: 80%;
+    }
+    }
+
+    @media (max-width: 900px) {
+        .presentationInfo h3{
+            font-size: 1em;
+        }
+        .imgInfoInside {
+            width: 2em;
+            padding: 0% 5%;
+            height: 2em;
+        }
+        .presentationInfo p {
+            font-size: 0.6em;
+        }
+        .imgContInsidePaquete {
+           
+            height: 12em;
+        }
+        .titleInsidePaquete {
+            font-size: 1.9em;
+        }
+        .subInsidePaquete {
+            
+            font-size: 1.1em;
+            
+        }
+        .btnPaquete{
+            font-size: 0.7em;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .presentationInfo h3{
+            font-size: 0.8em;
+        }
+        .imgInfoInside {
+            width: 1.7em;
+            padding: 0% 5%;
+            height: 1.7em;
+        }
+        .presentationInfo p {
+            font-size: 0.6em;
+            line-height: 100%;
+        }
+        .imgContInsidePaquete {
+           
+            height: 9em;
+        }
+        .titleInsidePaquete {
+            font-size: 1.7em;
+        }
+        .subInsidePaquete {
+            
+            font-size: 1em;
+            
+        }
+        .btnPaquete{
+            font-size: 0.6em;
+        }
+    }
+    
+    @media (max-width: 500px) {
+        .contInsidePaquete{
+            width: 90%;
+        }
+
+        .presentationInfo h3{
+            font-size: 0.7em;
+        }
+        .imgInfoInside {
+            width: 1.5em;
+            padding: 0% 5%;
+            height: 1.5em;
+        }
+        .presentationInfo p {
+            font-size: 0.5em;
+            line-height: 100%;
+        }
+        .imgContInsidePaquete {
+           
+            height: 8em;
+        }
+        .titleInsidePaquete {
+            font-size: 1.5em;
+        }
+        .subInsidePaquete {
+            
+            font-size: .9em;
+            
+        }
+        .btnPaquete{
+            font-size: 0.5em;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .contInsidePaquete{
+            width: 95%;
+        }
+    }
+
+    @media (max-width: 350px) {
+        .contInsidePaquete{
+            width: 95%;
+        }
+
+        .presentationInfo h3{
+            font-size: 0.6em;
+        }
+        .imgInfoInside {
+            width: 1.1em;
+            padding: 0% 5%;
+            height: 1.1em;
+        }
+        .presentationInfo p {
+            font-size: 0.4em;
+            line-height: 100%;
+        }
+        .imgContInsidePaquete {
+            
+            height: 6em;
+        }
+        .titleInsidePaquete {
+            font-size: 1.3em;
+        }
+        .subInsidePaquete {
+            
+            font-size: .8em;
+            
+        }
+        .btnPaquete{
+            font-size: 0.4em;
+        }
+    }

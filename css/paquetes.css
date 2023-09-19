@@ -8,33 +8,31 @@
 
 .br{
     background-image: url(../img/BrBG.png);
-    background-size: 100%;
-    background-position:20% 0%;
     
+    background-position: 50% 0%;
 }
 
 .cr{
     background-image: url(../img/CrBG.png);
-    background-size: 110%;
-    background-position:20% 0%;
+   background-position: 50% 0%;
+   
 }
 
 .cu{
     background-image: url(../img/CuBG.png);
-    background-size: 110%;
-    background-position:20% 0%;
+    background-position: center 0%;
+   
 }
 
 .vcp{
     background-image: url(../img/VcpBG.png);
-    background-size: 110%;
-    background-position:20% 0%;
+    background-position: 60% 0%;
 }
 
 .quinc{
     background-image: url(../img/15BG.png);
-    background-size: 110%;
-    background-position:20% 0%;
+    background-position: 100% 0%;
+    
 }
 
 .fijo {
@@ -88,6 +86,11 @@
     margin: 0% auto;
 }
 
+.contfrMobile{
+    width: 50%;
+    display: flex;
+}
+
 .imgItemPaquete{
     width: 50%;
     height: 100%;
@@ -97,10 +100,11 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    
 }
 
 .textsItemPaquete{
-    width: 35%;
+    width: 80%;
     
     padding: 3% 2%;
     padding-right: 0%;
@@ -129,7 +133,7 @@
 }
 
 .lbItemPaquete{
-    width: 15%;
+    width: 20%;
     padding: 1% 2%;
     padding-left: 0%;
     padding-top: 3%;
@@ -205,8 +209,8 @@
     position: relative;
     display: block;
     margin: 0;
-    width: 3rem;
-    height: 3rem;
+    width: 2.3rem;
+    height: 2.3rem;
     background: #ffffff;
     border-radius: 1.625rem;
    }
@@ -222,7 +226,7 @@
    
    button.learn-more .circle .icon.arrow {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    left: 0.825rem;
+    left: 0.6rem;
     width: 1.125rem;
     height: 0.125rem;
     background: none;
@@ -241,4 +245,218 @@
    }
    
    
+   @media (max-width: 1400px) {
+
+    .gridPaquetes{
+        width: 70%;
+    }
+
+    
    
+
+   }
+
+   @media (max-width: 1100px) {
+
+    .gridPaquetes{
+        width: 90%;
+        
+    }
+
+    .btnPaquete{
+        padding: 0.5rem 1rem;
+    }
+
+   }
+
+   @media (max-width: 800px) {
+
+    .gridPaquetes{
+        width: 90%;
+        
+    }
+
+    .btnPaquete{
+        padding: 0.5rem 1rem;
+    }
+
+    .titleItemPaquete{
+        font-size: .8em;
+    }
+
+    .transporteItemPaquete{
+        font-size: .8em;
+    }
+
+    .empresaItemPaquete{
+        font-size: .8em;
+    }
+
+    .destinoItemPaquete{
+        font-size: .8em;
+    }
+
+    
+
+   }
+
+   @media (max-width: 700px) {
+    .titlePaquete{
+        font-size: 1.7em;
+        
+    }
+
+    .subPaquete{
+        font-size: 1.1em;
+    }
+    .gridPaquetes{
+        width: 90%;
+        
+    }
+
+    .btnPaquete{
+        padding: 0.5rem 1rem;
+    }
+
+    .titleItemPaquete{
+        font-size: .8em;
+    }
+
+    .transporteItemPaquete{
+        font-size: .8em;
+    }
+
+    .empresaItemPaquete{
+        font-size: .8em;
+    }
+
+    .destinoItemPaquete{
+        font-size: .8em;
+    }
+
+    .imgItemPaquete{
+        width: 40%;
+    }
+
+    .contfrMobile{
+        width: 60%;
+    }
+
+
+    
+
+    .itemPaquete{
+        height: 7em;
+    }
+    .btnPaquete {
+        padding: 0.5rem 0.5rem;
+        font-size: 0.5em;
+    }
+    .mar {
+        width: 3.1em;
+        height: 1em;
+    }
+
+   }
+
+   @media (max-width: 600px) {
+    .br{
+        background-image: url(../img/BrBGMobile.png);
+    }
+
+    .cr{
+        background-image: url(../img/CrBGMobile.png);
+       
+    }
+    
+    .cu{
+        background-image: url(../img/CuBGMobile.png);
+        
+    }
+    
+    .vcp{
+        background-image: url(../img/VcpBG.png);
+       
+    }
+    
+    .quinc{
+        background-image: url(../img/15BGMobile.png);
+        
+    }
+
+    .imgItemPaquete{
+        width: 100%;
+        height: 50%;
+    }
+
+    .textsItemPaquete{
+        width: auto;
+        height:auto;
+        padding: 0%;
+        line-height: 80%;
+    }
+
+    .logoTrans {
+        height: 1.5em;
+        width: 1.5em;
+        
+    }
+
+    .gridPaquetes{
+        width: 15em;
+    }
+
+    .itemPaquete {
+        flex-direction: column;
+    }
+    .mar {
+        width: 2.5em;
+        height: 1em;
+    }
+    .itemPaquete {
+        height: 13em;
+    }
+    .contfrMobile{
+        width: auto;
+        height: auto;
+        justify-content: space-between;
+        padding: 2% 2%;
+    }
+    .lbItemPaquete{
+        width: auto;
+        height: auto;
+        padding: 0%;
+    }
+
+   }
+
+   @media (max-width: 500px) {
+    
+    .titleItemPaquete{
+        font-size: .7em;
+    }
+
+    .transporteItemPaquete{
+        font-size: .7em;
+    }
+
+    .empresaItemPaquete{
+        font-size: .7em;
+    }
+
+    .destinoItemPaquete{
+        font-size: .7em;
+    }
+   }
+
+   @media (max-width: 400px) {
+    .contfrMobile {
+       
+        padding: 4% 4%;
+    }
+
+    
+    .gridPaquetes{
+        width: 11em;
+    }
+   }

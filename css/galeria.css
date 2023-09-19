@@ -48,6 +48,7 @@ body{
     position: absolute;
     bottom: 10%;
     left: 50%;
+    width: auto;
     transform: translate(-50%,0%);
 }
 
@@ -116,7 +117,7 @@ body{
     width: 25%;
     height: 100%;
     opacity: 0.4;
-    
+    margin: 0% 2%;
   }
 
   .mySwiper .swiper-slide-thumb-active {
@@ -162,7 +163,7 @@ body{
     width: 25%;
     height: 100%;
     opacity: 0.4;
-    
+    margin: 0% 2%;
   }
 
   .SwiperPrim .swiper-slide-thumb-active {
@@ -190,7 +191,7 @@ body{
     width: 25%;
     height: 100%;
     opacity: 0.4;
-    
+    margin: 0% 2%;
   }
 
   .SwiperQuinc .swiper-slide-thumb-active {
@@ -262,8 +263,8 @@ body{
     top: 2%;
     right: 2%;
     position: absolute;
-    height: 50px;
-    width: 50px;
+    height: 35px;
+    width: 35px;
     cursor: pointer;
 
    }
@@ -273,3 +274,105 @@ body{
     height: 100%;
     object-fit: contain;
    }
+
+   @media (max-width: 1300px) {
+
+    .contGaleria {
+      display: flex;
+      width: 40em;
+      margin: auto;
+      height: 13.33em;
+      justify-content: center;}
+
+      .viewerGal {
+        width: 80%;
+        height: 80%;
+        margin: auto;
+        background-color: transparent;
+    }  
+  }
+
+  @media (max-width: 1100px) {
+
+    .contGaleria {
+      display: flex;
+      width: 35em;
+      margin: auto;
+      height: 11.66em;
+      justify-content: center;
+    }
+    .pButton{
+      font-size: 0.6em;
+    }
+    .titleGaleria {
+      
+      font-size: 1.8em;
+      
+  }
+  
+  
+  }
+
+  @media (max-width: 1000px) {
+
+    .contGaleria {
+      display: flex;
+      width: 30em;
+      margin: auto;
+      height: 10em;
+      justify-content: center;
+    }
+    .pButton{
+      font-size: 0.5em;
+      padding: 1rem 2rem;
+    }
+
+    .viewerGal {
+      width: 90%;
+      height: 80%;
+      margin: auto;
+      background-color: transparent;
+  }  
+
+
+  }
+
+  @media (max-width: 900px) {
+
+    
+    .pButton{
+      font-size: 0.5em;
+      padding: 1rem 2rem;
+    }
+
+
+  }
+
+  @media (max-width: 800px) {
+
+    
+    .contGaleria {
+      display: flex;
+      width: 10em;
+      margin: auto;
+      height: 33em;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    .itemGaleria{
+      width: 100%;
+      height: 30%;
+      margin: 1% 0%;
+    }
+
+    .titleGaleria {
+      
+      font-size: 1.6em;
+      
+  }
+
+
+  }
