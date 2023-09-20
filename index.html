@@ -175,20 +175,23 @@
             
             <div class="infoTXT">                    
                 <h2 data-aos="fade-in" data-aos-duration="700" class="titleInfo titleContact">Contacto</h2>
-                <form data-aos="fade-in" data-aos-duration="700" action="" method="post">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre">
+                <form data-aos="fade-in" data-aos-duration="700" action="" name="contactForm" id="contactForm" method="post">
+                    <label for="contactName">Nombre</label>
+                    <input name="contactName" id="contactName" type="text" name="nombre">
 
-                    <label for="mail">Tu correo electrónico</label>
-                    <input type="text" name="mail">
+                    <label for="contactEmail">Tu correo electrónico</label>
+                    <input name="contactEmail" type="email" id="contactEmail">
 
-                    <label for="asunto">Asunto</label>
-                    <input type="text" name="asunto">
+                    <label for="contactSubject">Asunto</label>
+                    <input name="contactSubject" id="contactSubject" type="text">
+                    
+                    <label for="contactPhone">Teléfono</label>
+                    <input name="contactPhone" pattern="[0-9]*" id="contactSubject" type="text">
 
-                    <label for="msg">Mensaje</label>
-                    <textarea name="msg" id="" cols="30" rows="10"></textarea>
+                    <label for="contactMessage">Mensaje</label>
+                    <textarea name="contactMessage" id="contactMessage" cols="30" rows="10"></textarea>
 
-                    <button class="button-36 btnForm">ENVIAR</button>
+                    <button class="button-36 btnForm" role="button" type="submit">ENVIAR</button>
 
 
 
@@ -207,9 +210,11 @@
                 </div>
             </div>
             <div data-aos="fade-in" data-aos-duration="700" data-aos-delay="200" class="relBrands">
-                <img src="./img/AUCKLAND.png" alt="">
-                <img src="./img/MSCCRUCEROS.png" alt="">
                 <img src="./img/havanatour.png" alt="">
+                <img src="./img/MSCCRUCEROS.png" alt="">
+                <img src="./img/AUCKLAND.png" alt="">
+                
+                
             </div>  
         </section>  
 
@@ -219,5 +224,6 @@
 
 
         <script src="./script/main.js"></script>
+        <script src="./script/mail.js"></script>
     </body>
 </html>
